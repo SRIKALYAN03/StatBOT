@@ -1,0 +1,9 @@
+flask
+pyttsx3
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+scikit-learn
+statsmodels

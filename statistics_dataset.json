@@ -1,0 +1,1934 @@
+[
+    {
+        "topic": "Bayes' Theorem",
+        "definition": "Bayes' theorem describes the probability of an event based on prior knowledge of conditions that might be related to the event.",
+        "formula": "P(A|B) = P(B|A) * P(A) / P(B)",
+        "example": "A medical test has 95% accuracy; Bayes' theorem helps calculate the actual probability of having the disease."
+    },
+    {
+        "topic": "Central Limit Theorem",
+        "definition": "The CLT states that the distribution of the sample mean approximates a normal distribution as the sample size grows.",
+        "formula": "X\u0304 ~ N(\u03bc, \u03c3\u00b2/n)",
+        "example": "If we repeatedly take samples of size 30 from a population, the means will form a normal distribution."
+    },
+    {
+        "topic": "Chi-Square Test",
+        "definition": "A chi-square test is used to determine if there is a significant association between categorical variables.",
+        "formula": "\u03c7\u00b2 = \u03a3[(O-E)\u00b2 / E]",
+        "example": "Testing if gender affects preference for a product."
+    },
+    {
+        "topic": "Confidence Interval",
+        "definition": "A confidence interval is a range of values, derived from sample statistics, that is likely to contain the true population parameter.",
+        "formula": "CI = X\u0304 \u00b1 Z * (\u03c3/\u221an)",
+        "example": "If a sample mean is 50 with a standard deviation of 5, and a 95% confidence level is used, the confidence interval might be (45, 55)."
+    },
+    {
+        "topic": "ANOVA (Analysis of Variance)",
+        "definition": "ANOVA is a statistical method used to compare the means of three or more samples.",
+        "formula": "F = (Between-group variance) / (Within-group variance)",
+        "example": "A researcher tests if three different diets result in significantly different weight losses."
+    },
+    {
+        "topic": "Covariance",
+        "definition": "Covariance measures how two variables move together.",
+        "formula": "Cov(X, Y) = \u03a3 (Xi - X\u0304)(Yi - \u0232) / N",
+        "example": "Positive covariance means stock prices move together; negative covariance means they move inversely."
+    },
+    {
+        "topic": "Correlation Coefficient",
+        "definition": "The correlation coefficient (r) measures the strength and direction of the linear relationship between two variables.",
+        "formula": "r = Cov(X, Y) / (\u03c3X * \u03c3Y)",
+        "example": "If r = 0.9, there is a strong positive correlation between two stocks."
+    },
+    {
+        "topic": "Exponential Distribution",
+        "definition": "An exponential distribution describes the time between events in a Poisson process.",
+        "formula": "P(X = x) = \u03bbe^(-\u03bbx)",
+        "example": "The time between arrivals of customers in a store follows an exponential distribution."
+    },
+    {
+        "topic": "Bootstrap Sampling",
+        "definition": "Bootstrap is a resampling method that uses random sampling with replacement.",
+        "formula": "Repeat sampling B times, calculate the statistic, and compute its distribution.",
+        "example": "Estimating confidence intervals by resampling from a given dataset."
+    },
+    {
+        "topic": "CDF (Cumulative Distribution Function)",
+        "definition": "The cumulative distribution function (CDF) gives the probability that a random variable is less than or equal to a certain value.",
+        "formula": "F(x) = P(X \u2264 x)",
+        "example": "For a uniform distribution U(0,1), CDF is F(x) = x for 0 \u2264 x \u2264 1."
+    },
+    {
+        "topic": "CDF (Cumulative Distribution Function)",
+        "definition": "The cumulative distribution function (CDF) gives the probability that a random variable is less than or equal to a certain value.",
+        "formula": "F(x) = P(X \u2264 x)",
+        "example": "For a uniform distribution U(0,1), CDF is F(x) = x for 0 \u2264 x \u2264 1."
+    },
+    {
+        "topic": "Bayesian Estimation",
+        "definition": "A statistical method that updates the probability estimate as more evidence becomes available.",
+        "formula": "Posterior = (Likelihood * Prior) / Evidence",
+        "example": "Used in spam filtering to update probability of spam based on past email patterns."
+    },
+    {
+        "topic": "AIC (Akaike Information Criterion)",
+        "definition": "A measure of model quality that balances goodness of fit and model complexity.",
+        "formula": "AIC = 2k - 2ln(L)",
+        "example": "Lower AIC values indicate a better-fitting model."
+    },
+    {
+        "topic": "BIC (Bayesian Information Criterion)",
+        "definition": "A model selection criterion that penalizes model complexity more heavily than AIC.",
+        "formula": "BIC = ln(n)k - 2ln(L)",
+        "example": "Used to compare different regression models."
+    },
+    {
+        "topic": "Accuracy",
+        "definition": "The ratio of correctly predicted observations to total observations.",
+        "formula": "Accuracy = (TP + TN) / (TP + TN + FP + FN)",
+        "example": "If a model correctly predicts 90 out of 100 test cases, accuracy is 90%."
+    },
+    {
+        "topic": "Bias-Variance Tradeoff",
+        "definition": "The balance between bias (error due to overly simple models) and variance (error due to overly complex models).",
+        "formula": "Total Error = Bias^2 + Variance + Irreducible Error",
+        "example": "A linear regression model may have high bias but low variance, while a deep neural network may have low bias but high variance."
+    },
+    {
+        "topic": "Confusion Matrix",
+        "definition": "A table used to evaluate classification models by comparing predicted and actual labels.",
+        "formula": "Matrix of TP, FP, TN, and FN",
+        "example": "A confusion matrix is used in medical testing to compare diagnosed vs actual conditions."
+    },
+    {
+        "topic": "Exploratory Data Analysis (EDA)",
+        "definition": "A method of analyzing data sets to summarize their main characteristics using visual methods.",
+        "formula": "No specific formula, involves visualization techniques.",
+        "example": "Using histograms and scatter plots to understand data distribution."
+    },
+    {
+        "topic": "Expectation-Maximization (EM) Algorithm",
+        "definition": "An iterative method to find maximum likelihood estimates of parameters in statistical models.",
+        "formula": "Likelihood maximization via expectation and maximization steps.",
+        "example": "Used in Gaussian Mixture Models (GMM) for clustering."
+    },
+    {
+        "topic": "Adjusted R-Squared",
+        "definition": "A modified version of R-squared adjusted for the number of predictors in a model.",
+        "formula": "Adj R\u00b2 = 1 - [(1-R\u00b2) * (n-1) / (n-k-1)]",
+        "example": "Used in regression models to determine the goodness of fit while penalizing extra predictors."
+    },
+    {
+        "topic": "Affinity Propagation",
+        "definition": "A clustering algorithm that identifies exemplars and forms clusters around them.",
+        "formula": "Minimizes message-passing updates between data points",
+        "example": "Used in image segmentation and customer segmentation."
+    },
+    {
+        "topic": "Akaike Information Criterion (AIC)",
+        "definition": "A measure for model selection balancing goodness of fit and complexity.",
+        "formula": "AIC = 2k - 2ln(L)",
+        "example": "Used to compare different regression models to choose the best fit."
+    },
+    {
+        "topic": "Bootstrapping",
+        "definition": "A statistical resampling method to estimate distributions by repeatedly sampling data with replacement.",
+        "formula": "Repeated sampling from dataset \u2192 Compute statistic on resampled data",
+        "example": "Used in confidence interval estimation and machine learning model evaluation."
+    },
+    {
+        "topic": "CART (Classification and Regression Trees)",
+        "definition": "A decision tree algorithm used for classification and regression tasks.",
+        "formula": "Recursive partitioning based on impurity reduction",
+        "example": "Used in predictive modeling for customer churn analysis."
+    },
+    {
+        "topic": "Coefficient of Determination (R\u00b2)",
+        "definition": "A measure indicating how well a model explains the variance of the target variable.",
+        "formula": "R\u00b2 = 1 - (SS_res / SS_tot)",
+        "example": "Used in linear regression to evaluate model performance."
+    },
+    {
+        "topic": "Cook\u2019s Distance",
+        "definition": "A measure that identifies influential data points in regression analysis.",
+        "formula": "D_i = (e_i\u00b2 / k\u03c3\u00b2) * (h_ii / (1 - h_ii)\u00b2)",
+        "example": "Used to detect outliers in regression modeling."
+    },
+    {
+        "topic": "Cox Proportional Hazards Model",
+        "definition": "A survival analysis model used to estimate hazard ratios.",
+        "formula": "h(t) = h\u2080(t) * exp(\u03b2X)",
+        "example": "Used in medical research to study survival rates."
+    },
+    {
+        "topic": "Cross-Validation",
+        "definition": "A technique to evaluate model performance by training and testing on different data subsets.",
+        "formula": "Split data into k subsets, train on k-1, test on 1 (repeat k times)",
+        "example": "Used in machine learning to prevent overfitting."
+    },
+    {
+        "topic": "Dendrogram",
+        "definition": "A tree diagram used to illustrate hierarchical clustering.",
+        "formula": "Distance matrix used to iteratively merge clusters",
+        "example": "Used in hierarchical clustering for visualizing relationships between clusters."
+    },
+    {
+        "topic": "Durbin-Watson Test",
+        "definition": "A test that detects autocorrelation in regression residuals.",
+        "formula": "DW = \u03a3 (e_t - e_t-1)\u00b2 / \u03a3 e_t\u00b2",
+        "example": "Used in time series regression analysis."
+    },
+    {
+        "topic": "Elastic Net",
+        "definition": "A regularization technique that combines L1 (Lasso) and L2 (Ridge) penalties.",
+        "formula": "Loss = RSS + \u03b1 (\u03bb1|\u03b2| + \u03bb2\u03b2\u00b2)",
+        "example": "Used in machine learning to improve feature selection."
+    },
+    {
+        "topic": "Elbow Method",
+        "definition": "A technique to determine the optimal number of clusters in K-Means clustering.",
+        "formula": "Plot within-cluster sum of squares vs. k",
+        "example": "Used in customer segmentation to find the best number of clusters."
+    },
+    {
+        "topic": "Active Learning",
+        "definition": "A type of learning in which the algorithm can query the user to obtain the desired outputs at new data points.",
+        "formula": "N/A",
+        "example": "Used in labeling datasets where AI selects the most informative samples."
+    },
+    {
+        "topic": "AdaBoost (Adaptive Boosting)",
+        "definition": "An ensemble learning technique that combines the outputs of several weak classifiers to create a strong classifier.",
+        "formula": "N/A",
+        "example": "AdaBoost is commonly used in facial recognition software."
+    },
+    {
+        "topic": "Adversarial Networks",
+        "definition": "Neural networks used to generate data, typically used in the context of Generative Adversarial Networks (GANs).",
+        "formula": "N/A",
+        "example": "Used in AI-generated images, such as deepfakes."
+    },
+    {
+        "topic": "Algorithm",
+        "definition": "A set of rules or instructions given to an AI, computer, or machine to help it learn on its own. Algorithms are used to solve problems or perform tasks.",
+        "formula": "N/A",
+        "example": "Sorting algorithms like quicksort and mergesort are commonly used in data structures."
+    },
+    {
+        "topic": "Alpha",
+        "definition": "A parameter in Ridge and Lasso regression that controls the amount of regularization applied to the model.",
+        "formula": "Lasso: Minimize (RSS + \u03b1|\u03b2|), Ridge: Minimize (RSS + \u03b1\u03b2\u00b2)",
+        "example": "A higher alpha value increases regularization, reducing overfitting."
+    },
+    {
+        "topic": "Artificial Intelligence (AI)",
+        "definition": "The simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.",
+        "formula": "N/A",
+        "example": "AI is used in self-driving cars, voice assistants, and chatbots."
+    },
+    {
+        "topic": "Association Rule Learning",
+        "definition": "A rule-based machine learning method for discovering interesting relations between variables in large databases.",
+        "formula": "Support(A) = (Transactions containing A) / (Total Transactions)",
+        "example": "Used in market basket analysis to find product associations."
+    },
+    {
+        "topic": "Autoencoder",
+        "definition": "A type of neural network used to learn efficient codings of unlabeled data. An autoencoder learns to compress data (encoding) and then reconstruct it back (decoding).",
+        "formula": "Y = f(WX + b)",
+        "example": "Used in image denoising and anomaly detection."
+    },
+    {
+        "topic": "Autoregressive Model",
+        "definition": "A type of random process that is often used to model and predict various types of natural phenomena.",
+        "formula": "Xt = \u03c61Xt\u22121 + \u03c62Xt\u22122 + \u2026 + \u03c6pXt\u2212p + \u03b5t",
+        "example": "Used in stock market prediction."
+    },
+    {
+        "topic": "A/B Testing",
+        "definition": "A statistical method used to compare two versions of a webpage or app against each other to determine which one performs better.",
+        "formula": "N/A",
+        "example": "Used in marketing campaigns to analyze user engagement."
+    },
+    {
+        "topic": "Attribute",
+        "definition": "A variable that represents a feature or characteristic of the data.",
+        "formula": "N/A",
+        "example": "Height, weight, and age are attributes in a dataset about people."
+    },
+    {
+        "topic": "Augmented Reality (AR)",
+        "definition": "An interactive experience where objects in the real world are enhanced by computer-generated perceptual information.",
+        "formula": "N/A",
+        "example": "Used in Pok\u00e9mon GO and real-time product visualization."
+    },
+    {
+        "topic": "AutoML (Automated Machine Learning)",
+        "definition": "The process of automating the end-to-end process of applying machine learning to real-world problems.",
+        "formula": "N/A",
+        "example": "Google AutoML helps automate ML model building."
+    },
+    {
+        "topic": "Bagging (Bootstrap Aggregating)",
+        "definition": "An ensemble technique that improves the stability and accuracy of machine learning algorithms by training multiple models on different subsets of the data and averaging their predictions.",
+        "formula": "N/A",
+        "example": "Random Forest uses bagging to improve decision trees."
+    },
+    {
+        "topic": "Bayesian Inference",
+        "definition": "A method of statistical inference in which Bayes' theorem is used to update the probability for a hypothesis as more evidence or information becomes available.",
+        "formula": "P(A|B) = [P(B|A) * P(A)] / P(B)",
+        "example": "Used in medical diagnosis to update disease probabilities based on test results."
+    },
+    {
+        "topic": "Bayesian Networks",
+        "definition": "Probabilistic graphical models that represent a set of variables and their conditional dependencies via a directed acyclic graph.",
+        "formula": "N/A",
+        "example": "Used in AI for speech recognition and spam filtering."
+    },
+    {
+        "topic": "Bias",
+        "definition": "A systematic error introduced into sampling or testing by selecting or encouraging one outcome or answer over others.",
+        "formula": "N/A",
+        "example": "A dataset containing only young people may introduce bias in an age prediction model."
+    },
+    {
+        "topic": "Big Data",
+        "definition": "Extremely large datasets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.",
+        "formula": "N/A",
+        "example": "Social media platforms generate big data from user interactions."
+    },
+    {
+        "topic": "Binary Classification",
+        "definition": "Classification tasks with two possible outcomes, such as spam vs. non-spam or positive vs. negative.",
+        "formula": "N/A",
+        "example": "Email spam filtering is a common binary classification task."
+    },
+    {
+        "topic": "Boosting",
+        "definition": "An ensemble technique that combines the outputs of several weak learners to create a strong learner.",
+        "formula": "Final Model = Weighted sum of weak models",
+        "example": "Gradient Boosting Machines (GBM) and AdaBoost are common boosting algorithms."
+    },
+    {
+        "topic": "Bootstrap",
+        "definition": "A resampling method used to estimate statistics on a population by sampling a dataset with replacement.",
+        "formula": "Resample n observations from a dataset of size n, with replacement.",
+        "example": "Used in confidence interval estimation and Random Forest models."
+    },
+    {
+        "topic": "Box Plot",
+        "definition": "A graphical representation of data that shows the distribution of a dataset based on a five-number summary: minimum, first quartile, median, third quartile, and maximum.",
+        "formula": "N/A",
+        "example": "Used in EDA to detect outliers in a dataset."
+    },
+    {
+        "topic": "Bag-of-Words (BoW)",
+        "definition": "A method of text representation in natural language processing where a text is represented as an unordered collection of words, disregarding grammar and word order but keeping multiplicity.",
+        "formula": "Vector representation of text ignoring order.",
+        "example": "Used in sentiment analysis and spam detection."
+    },
+    {
+        "topic": "Bayesian Optimization",
+        "definition": "A probabilistic model-based optimization technique used to find the maximum or minimum of an objective function that is expensive to evaluate.",
+        "formula": "Utilizes Gaussian Processes for function approximation.",
+        "example": "Used in hyperparameter tuning in machine learning."
+    },
+    {
+        "topic": "Bias (in Machine Learning)",
+        "definition": "The error introduced by approximating a real-world problem, which may be extremely complicated, by a much simpler model.",
+        "formula": "N/A",
+        "example": "Linear regression may have high bias when modeling nonlinear data."
+    },
+    {
+        "topic": "Batch Processing",
+        "definition": "The processing of data in large groups, or batches, at a specific time.",
+        "formula": "N/A",
+        "example": "Used in ETL (Extract, Transform, Load) data pipelines."
+    },
+    {
+        "topic": "Benchmarking",
+        "definition": "The process of comparing a system's performance against a standard or the performance of other systems.",
+        "formula": "N/A",
+        "example": "Machine learning model performance is benchmarked against state-of-the-art models."
+    },
+    {
+        "topic": "Bayesian Nonparametrics",
+        "definition": "A class of statistical methods that provide flexible models and are particularly useful when the number of parameters is unknown or infinite.",
+        "formula": "N/A",
+        "example": "Used in infinite mixture models and Dirichlet processes."
+    },
+    {
+        "topic": "Backpropagation",
+        "definition": "A method used in artificial neural networks to calculate the gradient of the loss function with respect to the weights by the chain rule, often used for training deep neural networks.",
+        "formula": "Gradient Descent with Chain Rule",
+        "example": "Used in deep learning to update neural network weights."
+    },
+    {
+        "topic": "Behavioral Analytics",
+        "definition": "The use of data to understand how users interact with a system or product, often used to optimize user experience and increase engagement.",
+        "formula": "N/A",
+        "example": "Used in e-commerce to track and predict user purchasing behavior."
+    },
+    {
+        "topic": "Categorical Data",
+        "definition": "Data that can be divided into specific groups or categories.",
+        "formula": "N/A",
+        "example": "Gender, color, and type of car are categorical variables."
+    },
+    {
+        "topic": "Classification",
+        "definition": "The process of predicting the class or category of a given data point.",
+        "formula": "N/A",
+        "example": "Spam detection is a classification task."
+    },
+    {
+        "topic": "Clustering",
+        "definition": "A type of unsupervised learning that involves grouping similar data points together.",
+        "formula": "N/A",
+        "example": "Customer segmentation in marketing."
+    },
+    {
+        "topic": "Correlation",
+        "definition": "A measure of the relationship between two variables and how they move together.",
+        "formula": "r = Cov(X,Y) / (\u03c3X * \u03c3Y)",
+        "example": "Correlation between temperature and ice cream sales."
+    },
+    {
+        "topic": "Curse of Dimensionality",
+        "definition": "The phenomenon where the feature space becomes exponentially larger as more features are added.",
+        "formula": "N/A",
+        "example": "High-dimensional data often suffers from sparsity."
+    },
+    {
+        "topic": "Customer Segmentation",
+        "definition": "The process of dividing customers into groups based on common characteristics.",
+        "formula": "N/A",
+        "example": "Used in marketing for targeted campaigns."
+    },
+    {
+        "topic": "Content-Based Filtering",
+        "definition": "A recommendation system technique that uses the features of items to recommend additional items similar to what the user likes.",
+        "formula": "Similarity Score = f(features)",
+        "example": "Netflix recommends movies based on genres you watch."
+    },
+    {
+        "topic": "Collaborative Filtering",
+        "definition": "A recommendation system technique that uses user-item interactions to recommend items.",
+        "formula": "N/A",
+        "example": "Amazon recommends products based on other users' behavior."
+    },
+    {
+        "topic": "Cost Function",
+        "definition": "A function that measures the performance of a machine learning model by quantifying the error.",
+        "formula": "Cost = (1/n) \u03a3 Loss(y_pred, y_actual)",
+        "example": "Mean Squared Error (MSE) is a common cost function."
+    },
+    {
+        "topic": "Cross-Entropy",
+        "definition": "A loss function often used in classification tasks to measure model performance.",
+        "formula": "H(p,q) = -\u03a3 p(x) log(q(x))",
+        "example": "Used in deep learning for multi-class classification."
+    },
+    {
+        "topic": "Causal Inference",
+        "definition": "The process of drawing a conclusion about a causal connection based on the conditions of the occurrence of an effect.",
+        "formula": "P(Y|do(X))",
+        "example": "Used in epidemiology for cause-effect studies."
+    },
+    {
+        "topic": "Conditional Probability",
+        "definition": "The probability of an event occurring given that another event has already occurred.",
+        "formula": "P(A|B) = P(A\u2229B) / P(B)",
+        "example": "Probability of rain given that it's cloudy."
+    },
+    {
+        "topic": "Cluster Analysis",
+        "definition": "A set of techniques used to classify objects or cases into relative groups called clusters.",
+        "formula": "N/A",
+        "example": "Used in marketing and bioinformatics."
+    },
+    {
+        "topic": "Cumulative Gain",
+        "definition": "A metric used to evaluate the performance of classification models based on the gain of true positives.",
+        "formula": "Gain(i) = TP(i) / Total Positives",
+        "example": "Used in ranking models."
+    },
+    {
+        "topic": "Data Cleaning",
+        "definition": "The process of detecting and correcting (or removing) corrupt or inaccurate records from a dataset.",
+        "formula": "N/A",
+        "example": "Handling missing values and outliers."
+    },
+    {
+        "topic": "Data Mining",
+        "definition": "The practice of examining large databases to generate new information.",
+        "formula": "N/A",
+        "example": "Used in fraud detection and business intelligence."
+    },
+    {
+        "topic": "Data Warehousing",
+        "definition": "The process of collecting, storing, and managing large volumes of data.",
+        "formula": "N/A",
+        "example": "Amazon uses data warehousing for customer insights."
+    },
+    {
+        "topic": "Decision Tree",
+        "definition": "A decision support tool that uses a tree-like model of decisions and their possible consequences.",
+        "formula": "N/A",
+        "example": "Used in loan approval systems."
+    },
+    {
+        "topic": "Deep Learning",
+        "definition": "A subset of machine learning that uses neural networks with many layers (deep networks).",
+        "formula": "N/A",
+        "example": "Used in image recognition and self-driving cars."
+    },
+    {
+        "topic": "Dimensionality Reduction",
+        "definition": "The process of reducing the number of random variables under consideration.",
+        "formula": "N/A",
+        "example": "PCA is a common dimensionality reduction technique."
+    },
+    {
+        "topic": "Domain Knowledge",
+        "definition": "Expertise and understanding in a specific field or industry relevant to the data being analyzed.",
+        "formula": "N/A",
+        "example": "Required for feature engineering in machine learning."
+    },
+    {
+        "topic": "Descriptive Statistics",
+        "definition": "Statistical methods that summarize and describe the characteristics of a dataset.",
+        "formula": "Mean, Median, Mode, Variance, etc.",
+        "example": "Used to describe survey data."
+    },
+    {
+        "topic": "Density Estimation",
+        "definition": "A technique used to estimate the probability density function of a random variable.",
+        "formula": "f(x) = (1/nh) \u03a3 K((x - xi)/h)",
+        "example": "Used in anomaly detection."
+    },
+    {
+        "topic": "Discriminant Analysis",
+        "definition": "A statistical technique used to separate two or more classes of objects or events.",
+        "formula": "LDA Function: \u03b4k(x) = x' \u03a3^-1 \u03bck - 0.5 \u03bck' \u03a3^-1 \u03bck + log(\u03c0k)",
+        "example": "Used in pattern recognition and classification problems."
+    },
+    {
+        "topic": "Distribution",
+        "definition": "A function that represents the possible values of a variable and how often they occur.",
+        "formula": "P(X=x)",
+        "example": "The normal distribution is commonly used in statistics."
+    },
+    {
+        "topic": "Dummy Variable",
+        "definition": "A binary variable created to represent categorical data in regression models.",
+        "formula": "0 or 1 encoding for categories",
+        "example": "Used in linear regression models for categorical features."
+    },
+    {
+        "topic": "Dynamic Programming",
+        "definition": "An optimization technique used to solve problems by breaking them into simpler subproblems.",
+        "formula": "Optimal Substructure + Overlapping Subproblems",
+        "example": "Used in shortest path algorithms like Bellman-Ford."
+    },
+    {
+        "topic": "Empirical Rule",
+        "definition": "A rule stating that for a normal distribution, nearly all data falls within three standard deviations of the mean.",
+        "formula": "68%-95%-99.7% rule",
+        "example": "Used in quality control and standardization."
+    },
+    {
+        "topic": "Ensemble Learning",
+        "definition": "A technique that combines multiple models to improve predictive performance.",
+        "formula": "Final Prediction = Weighted sum of individual models",
+        "example": "Random Forest is an example of ensemble learning."
+    },
+    {
+        "topic": "Entropy",
+        "definition": "A measure of randomness or uncertainty in a dataset.",
+        "formula": "H(X) = -\u03a3 p(x) log p(x)",
+        "example": "Used in Decision Trees for feature selection."
+    },
+    {
+        "topic": "Error Rate",
+        "definition": "The proportion of incorrect predictions in a model.",
+        "formula": "Error Rate = (Incorrect Predictions) / (Total Predictions)",
+        "example": "A model that misclassifies 10 out of 100 samples has an error rate of 10%."
+    },
+    {
+        "topic": "Euclidean Distance",
+        "definition": "A measure of distance between two points in n-dimensional space.",
+        "formula": "d = \u221a\u03a3 (xi - yi)\u00b2",
+        "example": "Used in KNN to find the closest neighbors."
+    },
+    {
+        "topic": "Exponential Smoothing",
+        "definition": "A forecasting method that assigns exponentially decreasing weights to past observations.",
+        "formula": "St = \u03b1Xt + (1 - \u03b1)St-1",
+        "example": "Used in time series forecasting for stock prices."
+    },
+    {
+        "topic": "EDA (Exploratory Data Analysis)",
+        "definition": "An approach to analyzing data sets to summarize their main characteristics, often with visual methods.",
+        "formula": "N/A",
+        "example": "Histograms and scatter plots are commonly used in EDA."
+    },
+    {
+        "topic": "ETL (Extract, Transform, Load)",
+        "definition": "A process in data warehousing responsible for pulling data out of the source systems and placing it into a data warehouse.",
+        "formula": "N/A",
+        "example": "Used in data pipelines to consolidate information from multiple sources."
+    },
+    {
+        "topic": "Epoch",
+        "definition": "One complete pass through the entire training dataset in machine learning.",
+        "formula": "N/A",
+        "example": "Training deep learning models usually involves multiple epochs to optimize accuracy."
+    },
+    {
+        "topic": "Embedded Methods",
+        "definition": "Feature selection methods that perform feature selection during the model training process.",
+        "formula": "N/A",
+        "example": "LASSO Regression is an example of an embedded method that selects important features."
+    },
+    {
+        "topic": "Ensemble Methods",
+        "definition": "Methods that combine the predictions of multiple models to produce a final prediction.",
+        "formula": "N/A",
+        "example": "Bagging, boosting, and stacking are common ensemble techniques."
+    },
+    {
+        "topic": "Evaluation Metrics",
+        "definition": "Metrics used to measure the performance of a model, such as accuracy, precision, recall, and F1 score.",
+        "formula": "F1 = 2 * (Precision * Recall) / (Precision + Recall)",
+        "example": "Accuracy measures overall correctness, while F1-score balances precision and recall."
+    },
+    {
+        "topic": "Empirical Risk Minimization (ERM)",
+        "definition": "A principle in statistical learning that aims to minimize the average of the loss function over the training set.",
+        "formula": "R\u0302(f) = (1/n) \u03a3 L(y_i, f(x_i))",
+        "example": "Used in machine learning models to minimize prediction error on training data."
+    },
+    {
+        "topic": "Evolutionary Algorithms",
+        "definition": "Optimization algorithms based on the principles of natural selection and genetics.",
+        "formula": "Mutation + Crossover + Selection",
+        "example": "Genetic Algorithms are used in feature selection and optimization tasks."
+    },
+    {
+        "topic": "Explanatory Variable",
+        "definition": "A type of independent variable that is used to explain variations in the dependent variable.",
+        "formula": "N/A",
+        "example": "In regression analysis, temperature can be an explanatory variable for ice cream sales."
+    },
+    {
+        "topic": "Feature Engineering",
+        "definition": "The process of using domain knowledge to extract features (characteristics, properties, attributes) from raw data.",
+        "formula": "N/A",
+        "example": "Creating a 'day_of_week' column from a timestamp."
+    },
+    {
+        "topic": "Feature Selection",
+        "definition": "The process of selecting a subset of relevant features for use in model construction.",
+        "formula": "N/A",
+        "example": "Removing low-variance or highly correlated features."
+    },
+    {
+        "topic": "False Positive Rate",
+        "definition": "The proportion of negative cases that were incorrectly classified as positive.",
+        "formula": "FPR = FP / (FP + TN)",
+        "example": "If 10 out of 100 non-spam emails are marked as spam, FPR = 10%."
+    },
+    {
+        "topic": "False Negative Rate",
+        "definition": "The proportion of positive cases that were incorrectly classified as negative.",
+        "formula": "FNR = FN / (FN + TP)",
+        "example": "Missing a disease in a positive test case is a false negative."
+    },
+    {
+        "topic": "F1 Score",
+        "definition": "A measure of a test's accuracy, calculated as the harmonic mean of precision and recall.",
+        "formula": "F1 = 2 * (Precision * Recall) / (Precision + Recall)",
+        "example": "F1-score is useful in imbalanced classification problems."
+    },
+    {
+        "topic": "Forecasting",
+        "definition": "The process of making predictions about the future based on past and present data.",
+        "formula": "Depends on model (ARIMA, Prophet, etc.)",
+        "example": "Forecasting next month's sales using historical trends."
+    },
+    {
+        "topic": "Fourier Transform",
+        "definition": "A mathematical transform that decomposes a function (often a time signal) into its constituent frequencies.",
+        "formula": "F(\u03c9) = \u222b f(t) e^(-i\u03c9t) dt",
+        "example": "Used in audio signal and image processing."
+    },
+    {
+        "topic": "Factor Analysis",
+        "definition": "A statistical method used to describe variability among observed variables in terms of fewer unobserved variables called factors.",
+        "formula": "X = \u039bF + \u03b5",
+        "example": "Used in psychology for personality testing."
+    },
+    {
+        "topic": "Feature Importance",
+        "definition": "A technique used to rank the input features of a predictive model by their importance.",
+        "formula": "Depends on model (e.g., Gini Importance in Random Forest)",
+        "example": "Top features contributing to model accuracy."
+    },
+    {
+        "topic": "Filter Methods",
+        "definition": "Feature selection methods that use statistical techniques to evaluate the importance of features.",
+        "formula": "N/A",
+        "example": "Using chi-square test or correlation filter."
+    },
+    {
+        "topic": "Fine-Tuning",
+        "definition": "The process of making small adjustments to a pre-trained model to adapt it to a specific task.",
+        "formula": "N/A",
+        "example": "Adjusting BERT model weights for sentiment analysis."
+    },
+    {
+        "topic": "Forward Selection",
+        "definition": "A stepwise regression method that starts with no variables in the model and adds variables one by one.",
+        "formula": "N/A",
+        "example": "Used to iteratively build the best regression model."
+    },
+    {
+        "topic": "Frequent Pattern Mining",
+        "definition": "The process of finding regular patterns in large datasets, often used in market basket analysis.",
+        "formula": "N/A",
+        "example": "Finding that users who buy bread also buy butter."
+    },
+    {
+        "topic": "Fuzzy Logic",
+        "definition": "A form of many-valued logic in which the truth values of variables may be any real number between 0 and 1.",
+        "formula": "N/A",
+        "example": "Used in AI to model reasoning with uncertainty."
+    },
+    {
+        "topic": "Finite State Machine",
+        "definition": "A computational model used to design both computer programs and sequential logic circuits.",
+        "formula": "N/A",
+        "example": "Used in parsing, game logic, and control systems."
+    },
+    {
+        "topic": "Fisher's Linear Discriminant",
+        "definition": "A method used in statistics and machine learning to find a linear combination of features that separates classes.",
+        "formula": "w = S\u207b\u00b9(m\u2081 - m\u2082)",
+        "example": "Used in classification tasks like face recognition."
+    },
+    {
+        "topic": "Feature Map",
+        "definition": "In convolutional neural networks, a feature map refers to the output of one filter applied to the previous layer.",
+        "formula": "N/A",
+        "example": "Visualizing edge detection in early CNN layers."
+    },
+    {
+        "topic": "Gaussian Distribution",
+        "definition": "Also known as the normal distribution, it is a bell-shaped distribution defined by its mean and standard deviation.",
+        "formula": "f(x) = (1 / \u221a(2\u03c0\u03c3\u00b2)) * e^(-(x - \u03bc)\u00b2 / 2\u03c3\u00b2)",
+        "example": "Heights, weights, and test scores often follow a Gaussian distribution."
+    },
+    {
+        "topic": "Gradient Descent",
+        "definition": "An optimization algorithm used to minimize a cost function by iteratively moving in the direction of steepest descent.",
+        "formula": "\u03b8 = \u03b8 - \u03b1 * \u2207J(\u03b8)",
+        "example": "Used to update weights in linear and logistic regression."
+    },
+    {
+        "topic": "Grid Search",
+        "definition": "A hyperparameter tuning technique that performs an exhaustive search over a specified parameter grid.",
+        "formula": "N/A",
+        "example": "Used to find optimal values for C and gamma in SVM."
+    },
+    {
+        "topic": "Gaussian Process",
+        "definition": "A collection of random variables where any finite number have a joint Gaussian distribution. Used for probabilistic modeling.",
+        "formula": "f(x) ~ GP(m(x), k(x,x'))",
+        "example": "Used in Bayesian optimization and time series forecasting."
+    },
+    {
+        "topic": "Gini Impurity",
+        "definition": "A measure of impurity in decision trees representing the chance of incorrect classification.",
+        "formula": "Gini = 1 - \u03a3(p\u1d62)\u00b2",
+        "example": "Used to choose the best split in a classification tree."
+    },
+    {
+        "topic": "Generative Adversarial Networks (GANs)",
+        "definition": "A machine learning framework where two neural networks \u2014 generator and discriminator \u2014 compete to create realistic data.",
+        "formula": "min_G max_D V(D, G) = E[log D(x)] + E[log(1 - D(G(z)))]",
+        "example": "Used to generate fake human faces or upscale low-res images."
+    },
+    {
+        "topic": "Generalization",
+        "definition": "The model's ability to perform well on unseen data.",
+        "formula": "N/A",
+        "example": "High generalization means low overfitting and underfitting."
+    },
+    {
+        "topic": "Geospatial Analysis",
+        "definition": "The collection and analysis of data with a geographic or spatial component.",
+        "formula": "N/A",
+        "example": "Used in mapping COVID-19 spread or traffic patterns."
+    },
+    {
+        "topic": "Gradient Boosting",
+        "definition": "An ensemble method that builds models sequentially by minimizing residual errors of prior models.",
+        "formula": "F\u2098(x) = F\u2098\u208b\u2081(x) + h\u2098(x)",
+        "example": "Used in XGBoost, LightGBM, and CatBoost."
+    },
+    {
+        "topic": "Gaussian Mixture Model (GMM)",
+        "definition": "A probabilistic model that assumes data is a mixture of several Gaussian distributions.",
+        "formula": "P(x) = \u03a3 w\u2096 * N(x | \u03bc\u2096, \u03a3\u2096)",
+        "example": "Used in speaker recognition and customer segmentation."
+    },
+    {
+        "topic": "Graph Theory",
+        "definition": "A mathematical study of graphs, composed of nodes (vertices) and edges (connections).",
+        "formula": "G = (V, E)",
+        "example": "Used in social network analysis and computer networking."
+    },
+    {
+        "topic": "GroupBy",
+        "definition": "A data operation that splits data into groups and applies functions to each.",
+        "formula": "df.groupby('category').mean()",
+        "example": "Used to calculate average sales per region."
+    },
+    {
+        "topic": "Gradient Checking",
+        "definition": "A technique to validate the correctness of gradients computed via backpropagation.",
+        "formula": "\u2202J/\u2202\u03b8 \u2248 (J(\u03b8+\u03b5) - J(\u03b8\u2212\u03b5)) / 2\u03b5",
+        "example": "Used during debugging of neural networks."
+    },
+    {
+        "topic": "Greedy Algorithm",
+        "definition": "An algorithm that makes the best immediate decision without considering future consequences.",
+        "formula": "N/A",
+        "example": "Used in Huffman coding, Dijkstra\u2019s algorithm."
+    },
+    {
+        "topic": "Gaussian Naive Bayes",
+        "definition": "A version of Naive Bayes classifier assuming continuous features follow a normal distribution.",
+        "formula": "P(x\u1d62 | y) = (1 / \u221a(2\u03c0\u03c3\u00b2)) * e^(-(x\u1d62 - \u03bc)\u00b2 / 2\u03c3\u00b2)",
+        "example": "Used in text classification and spam filtering."
+    },
+    {
+        "topic": "Granger Causality",
+        "definition": "A statistical method to determine if one time series can predict another.",
+        "formula": "y\u209c = a\u2080 + \u03a3 a\u1d62y\u209c\u208b\u1d62 + \u03a3 b\u1d62x\u209c\u208b\u1d62 + \u03b5\u209c",
+        "example": "Used in economics to determine cause-effect relationships."
+    },
+    {
+        "topic": "Grid Sampling",
+        "definition": "Exploring hyperparameter space using a fixed grid of values.",
+        "formula": "N/A",
+        "example": "Tuning learning rate and max_depth in decision trees."
+    },
+    {
+        "topic": "Genetic Algorithms",
+        "definition": "An optimization technique inspired by biological evolution using selection, crossover, and mutation.",
+        "formula": "Fitness = f(solution)",
+        "example": "Used in feature selection and tuning neural networks."
+    },
+    {
+        "topic": "Gated Recurrent Unit (GRU)",
+        "definition": "A simplified version of LSTM that uses gates to control memory and state updates.",
+        "formula": "h\u209c = (1 - z\u209c) \u2218 h\u209c\u208b\u2081 + z\u209c \u2218 h\u0303\u209c",
+        "example": "Used in speech recognition, time series modeling."
+    },
+    {
+        "topic": "Goodness of Fit",
+        "definition": "A measure of how well observed values match expected values under a model.",
+        "formula": "\u03c7\u00b2 = \u03a3((O - E)\u00b2 / E)",
+        "example": "Used in chi-square tests to compare distributions."
+    },
+    {
+        "topic": "Gaussian Kernel",
+        "definition": "A kernel function used to project data into higher-dimensional space.",
+        "formula": "K(x, x\u2032) = exp(\u2212\u2016x \u2212 x\u2032\u2016\u00b2 / (2\u03c3\u00b2))",
+        "example": "Used in SVMs for non-linear classification."
+    },
+    {
+        "topic": "Hyperparameter",
+        "definition": "A parameter whose value is set before training begins and controls the learning process.",
+        "formula": "N/A",
+        "example": "Learning rate, number of trees, batch size."
+    },
+    {
+        "topic": "Hierarchical Clustering",
+        "definition": "A clustering method that builds nested clusters by either merging or splitting them successively.",
+        "formula": "N/A",
+        "example": "Used in gene expression analysis and social network grouping."
+    },
+    {
+        "topic": "Heteroscedasticity",
+        "definition": "A condition where the variance of errors differs across observations in regression models.",
+        "formula": "Var(\u03b5\u1d62) \u2260 constant",
+        "example": "Detected using Breusch\u2013Pagan test in linear regression residuals."
+    },
+    {
+        "topic": "Hidden Markov Model (HMM)",
+        "definition": "A statistical model in which the system being modeled is a Markov process with hidden states.",
+        "formula": "P(O|\u03bb) = \u03a3 all state sequences Q P(O|Q,\u03bb)P(Q|\u03bb)",
+        "example": "Used in speech recognition, bioinformatics, and finance."
+    },
+    {
+        "topic": "Holdout Method",
+        "definition": "A validation method where the dataset is split into training and test sets to evaluate model performance.",
+        "formula": "N/A",
+        "example": "80% for training, 20% for testing."
+    },
+    {
+        "topic": "Histogram",
+        "definition": "A bar graph showing the frequency distribution of a dataset.",
+        "formula": "N/A",
+        "example": "Used to understand data distribution and detect skewness or outliers."
+    },
+    {
+        "topic": "Heuristics",
+        "definition": "Problem-solving techniques that find approximate solutions efficiently when exact methods are impractical.",
+        "formula": "N/A",
+        "example": "Greedy algorithms, A* search in pathfinding."
+    },
+    {
+        "topic": "Hinge Loss",
+        "definition": "A loss function used in SVMs to maximize margin between classes.",
+        "formula": "L(y) = max(0, 1 - y\u0302 * y)",
+        "example": "Used in linear classifiers such as support vector machines (SVM)."
+    },
+    {
+        "topic": "Harmonic Mean",
+        "definition": "A type of average useful for ratios, especially in F1 score calculations.",
+        "formula": "H = n / \u03a3(1/x\u1d62)",
+        "example": "Used to compute F1-score from precision and recall."
+    },
+    {
+        "topic": "Heatmap",
+        "definition": "A data visualization technique showing values as color intensities on a grid.",
+        "formula": "N/A",
+        "example": "Used to show correlations between features."
+    },
+    {
+        "topic": "Hyperplane",
+        "definition": "A flat subspace of one dimension less than its ambient space used to separate classes in SVMs.",
+        "formula": "w \u00b7 x + b = 0",
+        "example": "Used in support vector machines for binary classification."
+    },
+    {
+        "topic": "Hybrid Model",
+        "definition": "A model that combines multiple learning algorithms or techniques to improve prediction.",
+        "formula": "N/A",
+        "example": "Using ARIMA + LSTM for time-series forecasting."
+    },
+    {
+        "topic": "Independent Variable",
+        "definition": "A variable that is manipulated to determine its effects on a dependent variable.",
+        "formula": "N/A",
+        "example": "Temperature in a study measuring its effect on plant growth."
+    },
+    {
+        "topic": "Imputation",
+        "definition": "The process of replacing missing data with substituted values.",
+        "formula": "N/A",
+        "example": "Replacing missing age values with the mean age of the dataset."
+    },
+    {
+        "topic": "Instance-Based Learning",
+        "definition": "Learning that involves storing and using specific instances rather than generalizing a model.",
+        "formula": "N/A",
+        "example": "K-Nearest Neighbors (KNN) is an instance-based algorithm."
+    },
+    {
+        "topic": "Interactive Data Visualization",
+        "definition": "Visualizations that allow user interaction like zooming, filtering, or hovering.",
+        "formula": "N/A",
+        "example": "Dashboards with interactive charts in Tableau or Power BI."
+    },
+    {
+        "topic": "Interval Data",
+        "definition": "Data measured along a scale with equal distances between points but no true zero.",
+        "formula": "N/A",
+        "example": "Temperature in Celsius or Fahrenheit."
+    },
+    {
+        "topic": "Interpolation",
+        "definition": "Constructing new data points within the range of a known dataset.",
+        "formula": "f(x) = y\u2080 + (x - x\u2080)(y\u2081 - y\u2080)/(x\u2081 - x\u2080)",
+        "example": "Used to estimate population values between census years."
+    },
+    {
+        "topic": "IQR (Interquartile Range)",
+        "definition": "A measure of statistical dispersion; difference between the 75th and 25th percentiles.",
+        "formula": "IQR = Q3 - Q1",
+        "example": "Used to detect outliers in box plots."
+    },
+    {
+        "topic": "Image Recognition",
+        "definition": "The process of detecting and classifying objects or features in images.",
+        "formula": "N/A",
+        "example": "Used in facial recognition and self-driving cars."
+    },
+    {
+        "topic": "Incremental Learning",
+        "definition": "Learning where the model updates continuously with new data without full retraining.",
+        "formula": "N/A",
+        "example": "Online learning with mini-batches in SGD."
+    },
+    {
+        "topic": "Independent Component Analysis (ICA)",
+        "definition": "A computational technique to separate multivariate signals into independent components.",
+        "formula": "X = AS \u2192 S = A\u207b\u00b9X",
+        "example": "Used in EEG signal separation."
+    },
+    {
+        "topic": "Inertia",
+        "definition": "A clustering metric measuring within-cluster sum-of-squares distance.",
+        "formula": "Inertia = \u03a3\u2016x\u1d62 - c\u1d62\u2016\u00b2",
+        "example": "Used to evaluate K-Means clustering compactness."
+    },
+    {
+        "topic": "Information Gain",
+        "definition": "A metric used in decision trees to choose the best feature to split the data.",
+        "formula": "IG(S,A) = Entropy(S) - \u03a3(|S\u1d65|/|S|) * Entropy(S\u1d65)",
+        "example": "Used in ID3 decision tree algorithm."
+    },
+    {
+        "topic": "Instance Segmentation",
+        "definition": "Object detection method that segments each distinct object in an image.",
+        "formula": "N/A",
+        "example": "Used in self-driving vehicles to detect individual pedestrians."
+    },
+    {
+        "topic": "Jackknife Resampling",
+        "definition": "A statistical method for estimating the bias and variance of a model by systematically leaving out each observation.",
+        "formula": "\u03b8\u0302(i) = estimator with ith sample removed",
+        "example": "Used in estimating confidence intervals."
+    },
+    {
+        "topic": "Jaccard Index",
+        "definition": "A measure of similarity between two sets.",
+        "formula": "J(A, B) = |A \u2229 B| / |A \u222a B|",
+        "example": "Used in document similarity and clustering evaluation."
+    },
+    {
+        "topic": "Jittering",
+        "definition": "Adding random noise to data, often to prevent overfitting or improve generalization.",
+        "formula": "x' = x + \u03b5",
+        "example": "Used in synthetic dataset generation or scatterplots."
+    },
+    {
+        "topic": "Joint Probability Distribution",
+        "definition": "The probability distribution of two or more random variables occurring simultaneously.",
+        "formula": "P(X = x, Y = y)",
+        "example": "Used in Bayesian networks and probabilistic models."
+    },
+    {
+        "topic": "Jupyter Notebook",
+        "definition": "An open-source web application for creating and sharing documents with code, visualizations, and text.",
+        "formula": "N/A",
+        "example": "Used in data analysis and machine learning prototyping."
+    },
+    {
+        "topic": "JSON (JavaScript Object Notation)",
+        "definition": "A lightweight data-interchange format that's easy to read/write and used in APIs.",
+        "formula": "N/A",
+        "example": "Used for sending structured data between client and server."
+    },
+    {
+        "topic": "Jensen-Shannon Divergence",
+        "definition": "A symmetric and smoothed version of Kullback-Leibler divergence to measure distribution similarity.",
+        "formula": "JSD(P||Q) = \u00bd KL(P||M) + \u00bd KL(Q||M)",
+        "example": "Used in NLP and clustering evaluation."
+    },
+    {
+        "topic": "Johnson-Lindenstrauss Lemma",
+        "definition": "States that high-dimensional data can be projected into lower dimensions while preserving pairwise distances.",
+        "formula": "\u2016\u03c6(x\u1d62) - \u03c6(x\u2c7c)\u2016\u00b2 \u2248 \u2016x\u1d62 - x\u2c7c\u2016\u00b2",
+        "example": "Used in dimensionality reduction for large datasets."
+    },
+    {
+        "topic": "K-Means Clustering",
+        "definition": "An unsupervised algorithm that partitions data into K clusters where each point belongs to the cluster with the nearest mean.",
+        "formula": "argmin \u03a3\u2016x\u1d62 - \u03bc\u2c7c\u2016\u00b2",
+        "example": "Used in customer segmentation and image compression."
+    },
+    {
+        "topic": "K-Nearest Neighbors (K-NN)",
+        "definition": "A classification and regression algorithm that assigns the output based on the majority or average of K nearest data points.",
+        "formula": "d(x, x\u1d62) = \u221a\u03a3(x\u2c7c - x\u1d62\u2c7c)\u00b2",
+        "example": "Used in recommendation systems and pattern recognition."
+    },
+    {
+        "topic": "Kernel Trick",
+        "definition": "A method used to implicitly map data into a higher-dimensional space to make it linearly separable.",
+        "formula": "K(x, x\u2032) = \u03c6(x) \u00b7 \u03c6(x\u2032)",
+        "example": "Used in Support Vector Machines (SVM) for non-linear classification."
+    },
+    {
+        "topic": "Kernel Density Estimation (KDE)",
+        "definition": "A non-parametric method to estimate the probability density function of a random variable.",
+        "formula": "f(x) = (1/nh) \u03a3 K((x - x\u1d62)/h)",
+        "example": "Used in data smoothing and visualization."
+    },
+    {
+        "topic": "Kurtosis",
+        "definition": "A measure that describes the shape of a distribution\u2019s tails in relation to its overall shape.",
+        "formula": "\u03b2\u2082 = \u03bc\u2084 / \u03c3\u2074",
+        "example": "High kurtosis indicates more extreme outliers."
+    },
+    {
+        "topic": "K-Fold Cross-Validation",
+        "definition": "A model validation method where data is split into K parts and the model is trained and validated K times.",
+        "formula": "N/A",
+        "example": "Used to assess generalization of machine learning models."
+    },
+    {
+        "topic": "K-S Test (Kolmogorov\u2013Smirnov Test)",
+        "definition": "A non-parametric test comparing a sample distribution with a reference distribution or two samples.",
+        "formula": "D = max|F\u2081(x) - F\u2082(x)|",
+        "example": "Used to test normality or compare empirical data."
+    },
+    {
+        "topic": "Knowledge Discovery in Databases (KDD)",
+        "definition": "The process of discovering useful patterns and knowledge from large datasets.",
+        "formula": "N/A",
+        "example": "Used in data mining workflows and BI pipelines."
+    },
+    {
+        "topic": "Kappa Statistic",
+        "definition": "A metric to evaluate inter-rater agreement adjusted for chance agreement.",
+        "formula": "\u03ba = (P\u2092 - P\u2091) / (1 - P\u2091)",
+        "example": "Used in classification performance evaluation."
+    },
+    {
+        "topic": "Kalman Filter",
+        "definition": "An algorithm that estimates the unknown state of a system using noisy observations over time.",
+        "formula": "x\u0302\u2096 = A x\u0302\u2096\u208b\u2081 + B u\u2096 + K (z\u2096 - H x\u0302\u2096)",
+        "example": "Used in robotics, navigation, and time series prediction."
+    },
+    {
+        "topic": "Label Encoding",
+        "definition": "The process of converting categorical values into numeric labels.",
+        "formula": "category \u2192 integer",
+        "example": "\u2018Red\u2019, \u2018Green\u2019, \u2018Blue\u2019 \u2192 0, 1, 2."
+    },
+    {
+        "topic": "Latent Variable",
+        "definition": "A variable that is not directly observed but is inferred from observed data.",
+        "formula": "X = \u039bF + \u03b5",
+        "example": "Personality traits inferred from survey responses."
+    },
+    {
+        "topic": "Lasso Regression",
+        "definition": "A regression technique using L1 regularization to shrink coefficients and perform variable selection.",
+        "formula": "min ||Y - X\u03b2||\u00b2 + \u03bb\u03a3|\u03b2\u2c7c|",
+        "example": "Used to prevent overfitting in high-dimensional data."
+    },
+    {
+        "topic": "Learning Rate",
+        "definition": "A hyperparameter that determines the size of steps taken in gradient descent.",
+        "formula": "\u03b8 = \u03b8 - \u03b1 * \u2207J(\u03b8)",
+        "example": "Too large can overshoot minimum; too small makes training slow."
+    },
+    {
+        "topic": "Levenshtein Distance",
+        "definition": "A metric that measures the difference between two strings based on the minimum number of edits.",
+        "formula": "lev(i,j) = min(ins, del, sub)",
+        "example": "Used in spell checkers and fuzzy string matching."
+    },
+    {
+        "topic": "Linear Discriminant Analysis (LDA)",
+        "definition": "A method to find the linear combination of features that best separates classes.",
+        "formula": "w = S\u207b\u00b9(m\u2081 - m\u2082)",
+        "example": "Used in face recognition and dimensionality reduction."
+    },
+    {
+        "topic": "Logistic Regression",
+        "definition": "A classification algorithm modeling the probability of a binary outcome using a logistic function.",
+        "formula": "P(y=1|x) = 1 / (1 + e^-(\u03b2\u2080 + \u03b2x))",
+        "example": "Used to predict yes/no outcomes like spam detection."
+    },
+    {
+        "topic": "Long Short-Term Memory (LSTM)",
+        "definition": "A type of recurrent neural network (RNN) capable of learning long-term dependencies.",
+        "formula": "h\u209c = o\u209c \u2299 tanh(c\u209c)",
+        "example": "Used in speech recognition and time-series forecasting."
+    },
+    {
+        "topic": "Lift Chart",
+        "definition": "A chart that compares the performance of a predictive model to random chance.",
+        "formula": "Lift = Model Response Rate / Baseline Rate",
+        "example": "Used to visualize performance in marketing targeting."
+    },
+    {
+        "topic": "Likelihood",
+        "definition": "A function measuring how likely it is to observe data given model parameters.",
+        "formula": "L(\u03b8|X) = \u03a0 P(x\u1d62|\u03b8)",
+        "example": "Used in maximum likelihood estimation (MLE)."
+    },
+    {
+        "topic": "Machine Learning",
+        "definition": "A field of AI focused on teaching computers to learn from data and make predictions or decisions.",
+        "formula": "N/A",
+        "example": "Spam filtering, fraud detection, recommendation systems."
+    },
+    {
+        "topic": "Mean Absolute Error (MAE)",
+        "definition": "The average of the absolute differences between predicted and actual values.",
+        "formula": "MAE = (1/n) \u03a3 |y\u1d62 - \u0177\u1d62|",
+        "example": "Used to evaluate regression models."
+    },
+    {
+        "topic": "Mean Squared Error (MSE)",
+        "definition": "The average of the squares of the errors between predicted and actual values.",
+        "formula": "MSE = (1/n) \u03a3 (y\u1d62 - \u0177\u1d62)\u00b2",
+        "example": "Heavily penalizes large errors in regression tasks."
+    },
+    {
+        "topic": "Median Absolute Deviation (MAD)",
+        "definition": "A robust measure of statistical dispersion based on the median of the absolute deviations.",
+        "formula": "MAD = median(|x\u1d62 - median(x)|)",
+        "example": "Preferred over standard deviation for skewed data."
+    },
+    {
+        "topic": "Monte Carlo Simulation",
+        "definition": "A computational technique that uses repeated random sampling to estimate results.",
+        "formula": "Estimate = (1/N) \u03a3 f(x\u1d62)",
+        "example": "Used in finance, physics, and risk modeling."
+    },
+    {
+        "topic": "Multicollinearity",
+        "definition": "A situation where predictor variables in a regression model are highly correlated.",
+        "formula": "VIF = 1 / (1 - R\u00b2)",
+        "example": "Inflates standard errors in multiple regression analysis."
+    },
+    {
+        "topic": "Markov Chain",
+        "definition": "A stochastic model describing a sequence of events where the probability of each depends only on the previous state.",
+        "formula": "P(X\u2099\u208a\u2081 = x | X\u2099 = x\u2099, ..., X\u2080 = x\u2080) = P(X\u2099\u208a\u2081 = x | X\u2099 = x\u2099)",
+        "example": "Used in weather forecasting and board games."
+    },
+    {
+        "topic": "Multivariate Analysis",
+        "definition": "A set of techniques for analyzing data that involves multiple variables simultaneously.",
+        "formula": "N/A",
+        "example": "Used in marketing and psychometrics."
+    },
+    {
+        "topic": "Missing Data",
+        "definition": "Instances where data points are absent or not recorded.",
+        "formula": "N/A",
+        "example": "Handled using imputation or deletion techniques."
+    },
+    {
+        "topic": "Mutual Information",
+        "definition": "A measure of the amount of information one variable contains about another.",
+        "formula": "I(X;Y) = \u03a3\u03a3 P(x,y) log(P(x,y) / (P(x)P(y)))",
+        "example": "Used in feature selection and dependency detection."
+    },
+    {
+        "topic": "Naive Bayes",
+        "definition": "A classification algorithm based on Bayes\u2019 theorem with an assumption of feature independence.",
+        "formula": "P(C|X) = P(C) \u03a0 P(x\u1d62|C)",
+        "example": "Used for spam filtering and sentiment analysis."
+    },
+    {
+        "topic": "Normalization",
+        "definition": "Scaling input variables to a standard range, often 0 to 1 or z-score standardization.",
+        "formula": "z = (x - \u03bc) / \u03c3",
+        "example": "Helps improve model convergence and performance."
+    },
+    {
+        "topic": "Natural Language Processing (NLP)",
+        "definition": "A subfield of AI that enables machines to understand and interpret human language.",
+        "formula": "N/A",
+        "example": "Chatbots, translation, and sentiment analysis."
+    },
+    {
+        "topic": "Neural Network",
+        "definition": "A machine learning model inspired by the structure and function of the brain.",
+        "formula": "y = f(Wx + b)",
+        "example": "Used in image recognition, speech processing, and text classification."
+    },
+    {
+        "topic": "N-grams",
+        "definition": "Contiguous sequences of N items from a text or speech sample.",
+        "formula": "N/A",
+        "example": "Bigram: 'machine learning'; Trigram: 'support vector machine'."
+    },
+    {
+        "topic": "Nominal Data",
+        "definition": "Categorical data with no intrinsic ordering or ranking.",
+        "formula": "N/A",
+        "example": "Colors, gender, or city names."
+    },
+    {
+        "topic": "Numerical Data",
+        "definition": "Data expressed as numbers, suitable for arithmetic operations.",
+        "formula": "N/A",
+        "example": "Height, weight, age, and income."
+    },
+    {
+        "topic": "Noise",
+        "definition": "Random variation in data that distorts the underlying signal.",
+        "formula": "Signal = Data - Noise",
+        "example": "Sensor error or background interference."
+    },
+    {
+        "topic": "Neural Architecture Search (NAS)",
+        "definition": "A technique to automatically design the best neural network architecture for a task.",
+        "formula": "N/A",
+        "example": "Used to optimize performance in deep learning pipelines."
+    },
+    {
+        "topic": "Network Analysis",
+        "definition": "Study of relationships and interactions using graph theory.",
+        "formula": "G = (V, E)",
+        "example": "Used in social networks, biology, and computer systems."
+    },
+    {
+        "topic": "One-Hot Encoding",
+        "definition": "A method to convert categorical variables into a binary matrix format.",
+        "formula": "N/A",
+        "example": "Gender: [Male, Female] \u2192 Male = [1, 0], Female = [0, 1]"
+    },
+    {
+        "topic": "Overfitting",
+        "definition": "When a model fits the training data too well and performs poorly on new, unseen data.",
+        "formula": "N/A",
+        "example": "A model with 100% accuracy on training but fails on test data."
+    },
+    {
+        "topic": "Optimization",
+        "definition": "The process of adjusting parameters to maximize or minimize an objective function.",
+        "formula": "min/max f(x)",
+        "example": "Minimizing loss function in neural networks."
+    },
+    {
+        "topic": "Outlier",
+        "definition": "An observation that lies far from the other values in a dataset.",
+        "formula": "x < Q1 - 1.5*IQR or x > Q3 + 1.5*IQR",
+        "example": "Height = 8 ft in a group where average height is 5.5 ft."
+    },
+    {
+        "topic": "Ordinal Data",
+        "definition": "Categorical data with a meaningful order but unknown distance between categories.",
+        "formula": "N/A",
+        "example": "Survey ratings: Poor, Fair, Good, Excellent."
+    },
+    {
+        "topic": "Objective Function",
+        "definition": "A function that needs to be optimized in a machine learning model.",
+        "formula": "L(\u03b8) = \u03a3 (y\u1d62 - f(x\u1d62, \u03b8))\u00b2",
+        "example": "Loss functions in regression models."
+    },
+    {
+        "topic": "Online Learning",
+        "definition": "An approach where the model learns continuously as data arrives sequentially.",
+        "formula": "\u03b8 \u2190 \u03b8 - \u03b1 \u2207L(\u03b8; x\u1d62)",
+        "example": "Spam filters adapting over time."
+    },
+    {
+        "topic": "OverSampling",
+        "definition": "Balancing datasets by increasing the frequency of underrepresented classes.",
+        "formula": "N/A",
+        "example": "Duplicating minority class samples in fraud detection."
+    },
+    {
+        "topic": "Optimization Algorithm",
+        "definition": "An algorithm used to adjust model parameters for improved performance.",
+        "formula": "\u03b8 = \u03b8 - \u03b1 \u2207J(\u03b8)",
+        "example": "Gradient Descent, Adam, RMSprop."
+    },
+    {
+        "topic": "Ontology",
+        "definition": "A structured framework representing concepts and their relationships within a domain.",
+        "formula": "N/A",
+        "example": "Used in knowledge graphs and semantic web."
+    },
+    {
+        "topic": "Principal Component Analysis (PCA)",
+        "definition": "A dimensionality reduction technique transforming features into linearly uncorrelated components.",
+        "formula": "Z = XW",
+        "example": "Used to reduce image data dimensions before modeling."
+    },
+    {
+        "topic": "Precision",
+        "definition": "The ratio of true positive predictions to total predicted positives.",
+        "formula": "Precision = TP / (TP + FP)",
+        "example": "High precision = few false positives in classification."
+    },
+    {
+        "topic": "Predictive Modeling",
+        "definition": "Using statistics and machine learning to predict future outcomes based on past data.",
+        "formula": "\u0176 = f(X)",
+        "example": "Forecasting customer churn or product demand."
+    },
+    {
+        "topic": "Probability Distribution",
+        "definition": "A function describing the likelihood of different outcomes of a random variable.",
+        "formula": "\u03a3 P(x) = 1",
+        "example": "Normal distribution, binomial distribution."
+    },
+    {
+        "topic": "p-Value",
+        "definition": "A statistical measure used to determine the significance of results in hypothesis testing.",
+        "formula": "p = P(T \u2265 t | H\u2080)",
+        "example": "p < 0.05 suggests rejecting the null hypothesis."
+    },
+    {
+        "topic": "Parameter",
+        "definition": "A tunable configuration value used to control learning algorithms.",
+        "formula": "N/A",
+        "example": "Weights in a neural network or coefficients in regression."
+    },
+    {
+        "topic": "Permutation Test",
+        "definition": "A statistical test where data labels are shuffled to assess significance of observed statistic.",
+        "formula": "p = (number of permuted stats \u2265 observed) / total permutations",
+        "example": "Used when assumptions of parametric tests are violated."
+    },
+    {
+        "topic": "Partial Dependence Plot (PDP)",
+        "definition": "A plot showing marginal effect of a feature on the predicted outcome.",
+        "formula": "PDP(x\u1d62) = E[f(x\u1d62, x\u208b\u1d62)]",
+        "example": "Visualizes impact of a feature in tree-based models."
+    },
+    {
+        "topic": "Poisson Distribution",
+        "definition": "A distribution showing the probability of a given number of events occurring in a fixed interval.",
+        "formula": "P(k; \u03bb) = (\u03bb\u1d4f * e\u207b\u03bb) / k!",
+        "example": "Modeling number of calls per hour at a call center."
+    },
+    {
+        "topic": "Polychoric Correlation",
+        "definition": "Estimates correlation between two normally distributed continuous latent variables using ordinal data.",
+        "formula": "\u03c1 = Cov(X, Y) / (\u03c3\u2093\u03c3\u1d67)",
+        "example": "Used in psychometric surveys with Likert scale."
+    },
+    {
+        "topic": "Quantile",
+        "definition": "Values that divide a dataset into equal-sized, consecutive subsets.",
+        "formula": "Quantile(q) = value at cumulative probability q",
+        "example": "25th percentile (Q1), 50th percentile (median), 75th percentile (Q3)."
+    },
+    {
+        "topic": "Quantitative Data",
+        "definition": "Data that can be measured and expressed numerically and is suitable for statistical analysis.",
+        "formula": "N/A",
+        "example": "Height, weight, income, temperature."
+    },
+    {
+        "topic": "Q-Learning",
+        "definition": "A model-free reinforcement learning algorithm that estimates the value of taking an action in a state to maximize reward.",
+        "formula": "Q(s,a) \u2190 Q(s,a) + \u03b1 [r + \u03b3 max Q(s\u2032,a\u2032) \u2212 Q(s,a)]",
+        "example": "Used in game-playing agents and robot navigation."
+    },
+    {
+        "topic": "Quartile",
+        "definition": "A specific type of quantile that divides data into four equal parts.",
+        "formula": "Q1 = 25%, Q2 = 50%, Q3 = 75%",
+        "example": "Used in box plots to describe distribution."
+    },
+    {
+        "topic": "Query",
+        "definition": "A request for data or information from a database.",
+        "formula": "SELECT * FROM table_name WHERE condition;",
+        "example": "Retrieve customer records where age > 30."
+    },
+    {
+        "topic": "Queueing Theory",
+        "definition": "The mathematical study of waiting lines to analyze queue lengths and waiting times.",
+        "formula": "L = \u03bb / (\u03bc - \u03bb)",
+        "example": "Used in network traffic and customer service optimization."
+    },
+    {
+        "topic": "Qualitative Data",
+        "definition": "Descriptive data that is non-numeric and represents categories or characteristics.",
+        "formula": "N/A",
+        "example": "Colors, gender, brand names."
+    },
+    {
+        "topic": "Quantization",
+        "definition": "The process of mapping a large set of input values to a smaller, finite set.",
+        "formula": "x\u0302 = round(x / \u0394) * \u0394",
+        "example": "Used in digital signal processing and neural network compression."
+    },
+    {
+        "topic": "Quasi-Newton Method",
+        "definition": "Optimization algorithms that approximate the Newton-Raphson method without computing second derivatives.",
+        "formula": "x\u2096\u208a\u2081 = x\u2096 - H\u2096\u207b\u00b9 \u2207f(x\u2096)",
+        "example": "BFGS and L-BFGS algorithms in model optimization."
+    },
+    {
+        "topic": "Quality Control (QC)",
+        "definition": "A process for ensuring products or services meet required standards.",
+        "formula": "N/A",
+        "example": "Used in manufacturing to monitor defect rates."
+    },
+    {
+        "topic": "Random Forest",
+        "definition": "An ensemble learning method that builds multiple decision trees and merges them to improve accuracy and prevent overfitting.",
+        "formula": "Final Prediction = mode/mean of all tree predictions",
+        "example": "Used in classification of customer churn or fraud detection."
+    },
+    {
+        "topic": "Regression Analysis",
+        "definition": "A set of statistical techniques used to model the relationship between a dependent variable and one or more independent variables.",
+        "formula": "y = \u03b2\u2080 + \u03b2\u2081x\u2081 + ... + \u03b2\u2099x\u2099 + \u03b5",
+        "example": "Predicting house prices based on size and location."
+    },
+    {
+        "topic": "Reinforcement Learning",
+        "definition": "A machine learning paradigm where agents learn to make decisions by interacting with an environment to maximize cumulative rewards.",
+        "formula": "Q(s, a) \u2190 Q(s, a) + \u03b1[r + \u03b3 max Q(s\u2032, a\u2032) \u2212 Q(s, a)]",
+        "example": "Used in game AI and robotics."
+    },
+    {
+        "topic": "Residual",
+        "definition": "The difference between the actual observed value and the value predicted by a model.",
+        "formula": "Residual = y - \u0177",
+        "example": "Used to evaluate regression model accuracy."
+    },
+    {
+        "topic": "Ridge Regression",
+        "definition": "A regression method that introduces L2 regularization to reduce overfitting in multicollinear data.",
+        "formula": "Loss = RSS + \u03bb\u03a3\u03b2\u2c7c\u00b2",
+        "example": "Used when predictors are highly correlated."
+    },
+    {
+        "topic": "ROC Curve (Receiver Operating Characteristic Curve)",
+        "definition": "A plot showing the trade-off between true positive rate and false positive rate at different classification thresholds.",
+        "formula": "TPR = TP / (TP + FN), FPR = FP / (FP + TN)",
+        "example": "Used to evaluate binary classification models."
+    },
+    {
+        "topic": "Root Mean Squared Error (RMSE)",
+        "definition": "A measure of prediction error, representing the square root of the average squared differences between predicted and actual values.",
+        "formula": "RMSE = \u221a(\u03a3(y\u1d62 - \u0177\u1d62)\u00b2 / n)",
+        "example": "Used to evaluate regression models."
+    },
+    {
+        "topic": "Random Variable",
+        "definition": "A variable representing outcomes of a random process, taking on numerical values.",
+        "formula": "E[X] = \u03a3x\u1d62P(x\u1d62)",
+        "example": "The number shown when rolling a die."
+    },
+    {
+        "topic": "Resampling",
+        "definition": "A technique to repeatedly draw samples from a dataset to assess the accuracy of a model or statistic.",
+        "formula": "N/A",
+        "example": "Bootstrapping, cross-validation."
+    },
+    {
+        "topic": "Recurrent Neural Network (RNN)",
+        "definition": "A type of neural network where connections form cycles, allowing information to persist across time steps.",
+        "formula": "h\u209c = f(Wx\u209c + Uh\u209c\u208b\u2081 + b)",
+        "example": "Used in language modeling and time-series forecasting."
+    },
+    {
+        "topic": "Supervised Learning",
+        "definition": "A machine learning task where the model learns from labeled input-output pairs.",
+        "formula": "N/A",
+        "example": "Spam detection, price prediction."
+    },
+    {
+        "topic": "Support Vector Machine (SVM)",
+        "definition": "A supervised learning algorithm that finds the optimal hyperplane to classify data.",
+        "formula": "w\u00b7x + b = 0",
+        "example": "Used for text classification and image recognition."
+    },
+    {
+        "topic": "Standard Deviation",
+        "definition": "A measure of how spread out values in a dataset are from the mean.",
+        "formula": "\u03c3 = \u221a(\u03a3(x\u1d62 - \u03bc)\u00b2 / n)",
+        "example": "Used in finance to measure volatility."
+    },
+    {
+        "topic": "Stratified Sampling",
+        "definition": "A sampling technique where the population is divided into subgroups and samples are drawn from each.",
+        "formula": "N/A",
+        "example": "Used in surveys to ensure demographic representation."
+    },
+    {
+        "topic": "Stochastic Gradient Descent (SGD)",
+        "definition": "An iterative optimization method for minimizing loss by using random samples (mini-batches).",
+        "formula": "\u03b8 \u2190 \u03b8 - \u03b1 \u2207L(\u03b8; x\u1d62)",
+        "example": "Used to train deep learning models."
+    },
+    {
+        "topic": "Silhouette Score",
+        "definition": "A metric for evaluating clustering by measuring how similar an object is to its own cluster vs other clusters.",
+        "formula": "s = (b - a) / max(a, b)",
+        "example": "Used to assess K-means clustering results."
+    },
+    {
+        "topic": "SMOTE (Synthetic Minority Over-sampling Technique)",
+        "definition": "A technique for generating synthetic samples to balance imbalanced class datasets.",
+        "formula": "x_new = x + rand(0,1) * (x_neigh - x)",
+        "example": "Used in fraud and anomaly detection."
+    },
+    {
+        "topic": "Scaling",
+        "definition": "Transforming features to a specific range to improve model performance.",
+        "formula": "z = (x - \u03bc) / \u03c3 or min-max: x_scaled = (x - min) / (max - min)",
+        "example": "Used before applying KNN or SVM."
+    },
+    {
+        "topic": "SQL (Structured Query Language)",
+        "definition": "A language used to manage and query relational databases.",
+        "formula": "SELECT column FROM table WHERE condition;",
+        "example": "Used to retrieve and filter customer data."
+    },
+    {
+        "topic": "Shapley Value",
+        "definition": "A method from cooperative game theory that fairly assigns credit for a prediction to features.",
+        "formula": "\u03d5\u1d62 = \u03a3 (|S|!(n \u2212 |S| \u2212 1)! / n!) [v(S \u222a {i}) \u2212 v(S)]",
+        "example": "Used in explainable AI to interpret model output."
+    },
+    {
+        "topic": "T-Distributed Stochastic Neighbor Embedding (t-SNE)",
+        "definition": "A nonlinear dimensionality reduction technique for visualizing high-dimensional data in 2 or 3 dimensions.",
+        "formula": "min KL(P\u2016Q) = \u03a3 P\u1d62\u2c7c log(P\u1d62\u2c7c / Q\u1d62\u2c7c)",
+        "example": "Used to visualize word embeddings or image feature space."
+    },
+    {
+        "topic": "Time Series Analysis",
+        "definition": "A method for analyzing time-ordered data points to extract meaningful statistics and identify trends.",
+        "formula": "Y\u209c = T\u209c + S\u209c + E\u209c",
+        "example": "Forecasting stock prices or weather patterns."
+    },
+    {
+        "topic": "Training Set",
+        "definition": "A portion of the dataset used to train a machine learning model.",
+        "formula": "N/A",
+        "example": "80% of a dataset used to teach the model patterns."
+    },
+    {
+        "topic": "Test Set",
+        "definition": "A portion of the dataset used to evaluate the performance of a trained model.",
+        "formula": "Accuracy = Correct Predictions / Total Predictions",
+        "example": "20% of a dataset used to validate model performance."
+    },
+    {
+        "topic": "TensorFlow",
+        "definition": "An open-source machine learning library for developing and training ML models using dataflow graphs.",
+        "formula": "N/A",
+        "example": "Used in deep learning projects like image recognition."
+    },
+    {
+        "topic": "Tokenization",
+        "definition": "The process of splitting text into smaller units such as words, phrases, or symbols.",
+        "formula": "N/A",
+        "example": "Splitting 'Machine Learning is fun' into ['Machine', 'Learning', 'is', 'fun']."
+    },
+    {
+        "topic": "Tree-Based Methods",
+        "definition": "Machine learning models that use tree structures to make decisions.",
+        "formula": "Split Criterion: Gini or Entropy",
+        "example": "Used in decision trees, random forests, and gradient boosting."
+    },
+    {
+        "topic": "Text Mining",
+        "definition": "Extracting useful information and patterns from textual data.",
+        "formula": "N/A",
+        "example": "Sentiment analysis, topic modeling, and keyword extraction."
+    },
+    {
+        "topic": "Transfer Learning",
+        "definition": "Reusing a pre-trained model on a new but related task.",
+        "formula": "Model_new = FineTune(Model_pretrained)",
+        "example": "Using ImageNet-trained model for medical image classification."
+    },
+    {
+        "topic": "Tukey's Range Test",
+        "definition": "A statistical test for pairwise comparison of means after ANOVA to find significant differences.",
+        "formula": "q = (Y\u0304\u2090 - Y\u0304_b) / SE",
+        "example": "Used in experimental analysis of multiple treatments."
+    },
+    {
+        "topic": "Underfitting",
+        "definition": "A modeling issue where a model is too simple to learn the underlying patterns in the data.",
+        "formula": "N/A",
+        "example": "Linear model used for nonlinear relationships."
+    },
+    {
+        "topic": "Unsupervised Learning",
+        "definition": "A machine learning approach that finds hidden patterns from unlabeled data.",
+        "formula": "N/A",
+        "example": "Customer segmentation using K-means."
+    },
+    {
+        "topic": "Upsampling",
+        "definition": "Increasing the number of samples in the minority class to balance a dataset.",
+        "formula": "N/A",
+        "example": "Duplicating records in fraud detection datasets."
+    },
+    {
+        "topic": "Univariate Analysis",
+        "definition": "Analysis involving only one variable at a time.",
+        "formula": "N/A",
+        "example": "Histogram of ages."
+    },
+    {
+        "topic": "Uplift Modeling",
+        "definition": "A method to measure the impact of a treatment by comparing treated and untreated groups.",
+        "formula": "Uplift = P(y=1|T=1) - P(y=1|T=0)",
+        "example": "Marketing campaign effect on customer purchases."
+    },
+    {
+        "topic": "Uniform Distribution",
+        "definition": "A distribution where all outcomes are equally likely.",
+        "formula": "f(x) = 1 / (b - a)",
+        "example": "Rolling a fair die."
+    },
+    {
+        "topic": "Uncertainty Quantification",
+        "definition": "Quantifying the uncertainty in predictions due to model, data, or parameters.",
+        "formula": "N/A",
+        "example": "Error bounds in simulations."
+    },
+    {
+        "topic": "U-Net",
+        "definition": "A convolutional neural network architecture used for image segmentation.",
+        "formula": "N/A",
+        "example": "Biomedical image segmentation of cells."
+    },
+    {
+        "topic": "User-Based Collaborative Filtering",
+        "definition": "A recommendation method based on user similarities.",
+        "formula": "sim(u,v) = cosine(u,v)",
+        "example": "Movie recommendations on streaming platforms."
+    },
+    {
+        "topic": "Validation Set",
+        "definition": "A dataset used to tune hyperparameters and evaluate model performance during training.",
+        "formula": "N/A",
+        "example": "Used in cross-validation to prevent overfitting."
+    },
+    {
+        "topic": "Variance",
+        "definition": "A measure of the dispersion of data points around the mean.",
+        "formula": "\u03c3\u00b2 = \u03a3(x\u1d62 - \u03bc)\u00b2 / n",
+        "example": "Used to analyze spread in temperature data."
+    },
+    {
+        "topic": "Variance Inflation Factor (VIF)",
+        "definition": "A metric that quantifies multicollinearity in regression.",
+        "formula": "VIF = 1 / (1 - R\u00b2)",
+        "example": "VIF > 10 suggests multicollinearity."
+    },
+    {
+        "topic": "Vectorization",
+        "definition": "Converting operations to apply to entire arrays or vectors instead of individual elements.",
+        "formula": "N/A",
+        "example": "Numpy broadcasting in Python."
+    },
+    {
+        "topic": "Venn Diagram",
+        "definition": "A diagram that shows all possible logical relations between sets.",
+        "formula": "A \u2229 B, A \u222a B",
+        "example": "Visualizing overlapping customer segments."
+    },
+    {
+        "topic": "Vertical Scaling",
+        "definition": "Improving a machine's resources (CPU, RAM) to enhance performance.",
+        "formula": "N/A",
+        "example": "Upgrading a server's RAM."
+    },
+    {
+        "topic": "Voting Classifier",
+        "definition": "An ensemble technique that aggregates predictions from multiple models.",
+        "formula": "y_pred = mode(y\u2081, y\u2082, ..., y\u2099)",
+        "example": "Combining decision tree, SVM, and logistic regression outputs."
+    },
+    {
+        "topic": "Variance Reduction",
+        "definition": "A method in decision trees to choose the optimal split.",
+        "formula": "Variance = \u03a3(p\u1d62 * var\u1d62)",
+        "example": "Used in regression trees to improve split quality."
+    },
+    {
+        "topic": "Volatility",
+        "definition": "A measure of variation in financial returns.",
+        "formula": "\u03c3 = \u221a(\u03a3(r\u1d62 - \u03bc)\u00b2 / n)",
+        "example": "Stock price fluctuations."
+    },
+    {
+        "topic": "Visual Analytics",
+        "definition": "The combination of data analysis and interactive visualization.",
+        "formula": "N/A",
+        "example": "Dashboards with filtering and drill-down capabilities."
+    },
+    {
+        "topic": "Weights",
+        "definition": "Parameters in neural networks that adjust the input signal strength.",
+        "formula": "y = w * x + b",
+        "example": "Updated during backpropagation."
+    },
+    {
+        "topic": "Word Embeddings",
+        "definition": "Vector representations of words capturing semantic meaning.",
+        "formula": "N/A",
+        "example": "\u2018king\u2019 - \u2018man\u2019 + \u2018woman\u2019 \u2248 \u2018queen\u2019 using Word2Vec."
+    },
+    {
+        "topic": "Wilcoxon Test",
+        "definition": "A non-parametric test comparing two paired groups.",
+        "formula": "W = min(R\u207a, R\u207b)",
+        "example": "Used when data is not normally distributed."
+    },
+    {
+        "topic": "Weka",
+        "definition": "A data mining tool with ML algorithms for data pre-processing, classification, and clustering.",
+        "formula": "N/A",
+        "example": "GUI-based tool for quick prototyping."
+    },
+    {
+        "topic": "Wavelet Transform",
+        "definition": "Transforms a signal into components based on frequency and time.",
+        "formula": "Wx(a,b) = \u222b x(t)\u03c8((t\u2212b)/a) dt",
+        "example": "Used in ECG signal denoising."
+    },
+    {
+        "topic": "Weighted Average",
+        "definition": "An average where each value has a corresponding weight.",
+        "formula": "\u03a3(w\u1d62x\u1d62) / \u03a3w\u1d62",
+        "example": "Used in portfolio returns."
+    },
+    {
+        "topic": "Winsorization",
+        "definition": "Limiting extreme values to reduce the effect of outliers.",
+        "formula": "N/A",
+        "example": "Capping top and bottom 5% of values."
+    },
+    {
+        "topic": "Weak Learner",
+        "definition": "A model performing slightly better than random guessing.",
+        "formula": "Accuracy > 0.5",
+        "example": "Decision stumps in AdaBoost."
+    },
+    {
+        "topic": "Within-Cluster Sum of Squares (WCSS)",
+        "definition": "A measure of variance within each cluster in clustering.",
+        "formula": "WCSS = \u03a3\u03a3\u2016x\u1d62 - \u03bc\u2c7c\u2016\u00b2",
+        "example": "Used in elbow method for K selection."
+    },
+    {
+        "topic": "Wasserstein Distance",
+        "definition": "A distance metric between two probability distributions.",
+        "formula": "W(P, Q) = inf \u222b|x - y| d\u03b3(x, y)",
+        "example": "Used in GANs to compare real vs. generated data."
+    },
+    {
+        "topic": "XGBoost (Extreme Gradient Boosting)",
+        "definition": "An efficient and scalable implementation of gradient boosting used for supervised learning tasks.",
+        "formula": "Obj = L(\u03b8) + \u03a9(f)",
+        "example": "Used in Kaggle competitions for regression and classification."
+    },
+    {
+        "topic": "XML (Extensible Markup Language)",
+        "definition": "A markup language for encoding documents in a readable format for both humans and machines.",
+        "formula": "N/A",
+        "example": "Used for web data transfer and document storage."
+    },
+    {
+        "topic": "X-Coordinates",
+        "definition": "The horizontal position value in a 2D coordinate system.",
+        "formula": "Point = (x, y)",
+        "example": "Used to plot points in graphs."
+    },
+    {
+        "topic": "X-Axis",
+        "definition": "The horizontal axis in a Cartesian coordinate system or graph.",
+        "formula": "N/A",
+        "example": "Time on x-axis in a time series plot."
+    },
+    {
+        "topic": "Y-Coordinates",
+        "definition": "The vertical position value in a 2D coordinate system.",
+        "formula": "Point = (x, y)",
+        "example": "Used to represent output values in plots."
+    },
+    {
+        "topic": "Y-Axis",
+        "definition": "The vertical axis in a Cartesian coordinate system or graph.",
+        "formula": "N/A",
+        "example": "Used for target or dependent variables in graphs."
+    },
+    {
+        "topic": "Yule-Simon Distribution",
+        "definition": "A probability distribution used for modeling heavy-tailed phenomena.",
+        "formula": "P(k) \u221d \u03b2 * B(k, \u03b2+1)",
+        "example": "Used in linguistics and internet traffic modeling."
+    },
+    {
+        "topic": "Yottabyte (YB)",
+        "definition": "A unit of data storage equal to 10\u00b2\u2074 bytes.",
+        "formula": "1 YB = 10\u00b2\u2074 bytes",
+        "example": "Used in discussions about massive-scale cloud storage."
+    },
+    {
+        "topic": "Z-Score (Standard Score)",
+        "definition": "Indicates how many standard deviations a data point is from the mean.",
+        "formula": "z = (x - \u03bc) / \u03c3",
+        "example": "z = 2 means the value is 2 SD above mean."
+    },
+    {
+        "topic": "Zero-Inflated Model",
+        "definition": "A statistical model for count data that has more zero counts than expected.",
+        "formula": "P(Y=0) = \u03c0 + (1 - \u03c0) * f(0; \u03b8)",
+        "example": "Used in insurance claims, where most people make no claims."
+    },
+    {
+        "topic": "Z-Test",
+        "definition": "A statistical test to compare a sample mean to a known population mean.",
+        "formula": "Z = (x\u0304 - \u03bc) / (\u03c3 / \u221an)",
+        "example": "Used to test if a class's average test score differs from the national average."
+    },
+    {
+        "topic": "Zipf's Law",
+        "definition": "States that the frequency of any word is inversely proportional to its rank.",
+        "formula": "f(r) \u221d 1/r^s",
+        "example": "Used in natural language processing and economics."
+    },
+    {
+        "topic": "Zoning",
+        "definition": "Dividing a dataset into zones or regions based on specific rules or attributes.",
+        "formula": "N/A",
+        "example": "Used in geographic information systems (GIS)."
+    },
+    {
+        "topic": "Z-Transformation",
+        "definition": "Transforms a time series to a stationary series by removing trends and seasonality.",
+        "formula": "z = (x - \u03bc) / \u03c3",
+        "example": "Used in time series normalization."
+    },
+    {
+        "topic": "Z-Score Normalization",
+        "definition": "Scaling technique using mean and standard deviation.",
+        "formula": "z = (x - \u03bc) / \u03c3",
+        "example": "Used in preprocessing before SVM or PCA."
+    },
+    {
+        "topic": "Z-Table",
+        "definition": "A table that shows cumulative probability for a standard normal distribution.",
+        "formula": "N/A",
+        "example": "Used to find area under the normal curve."
+    },
+    {
+        "topic": "Zero-Order Hold (ZOH)",
+        "definition": "A method for converting a sampled signal into a continuous-time signal.",
+        "formula": "N/A",
+        "example": "Used in digital-to-analog signal conversion."
+    },
+    {
+        "topic": "Zero-R (Zero-Rule Algorithm)",
+        "definition": "A baseline algorithm that always predicts the majority class.",
+        "formula": "y_pred = mode(y)",
+        "example": "Used to benchmark model performance."
+    }
+]
